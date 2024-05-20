@@ -1,0 +1,82 @@
+Languages:-
+1- Markup Language:- HTML,XML,,DHTML,XHTML.
+2-Style Sheet Language:- CascadingStyleSheet, (Bootstrap:-Framework).
+3-Programming Language:-Php,Javascript,C#,Python.
+#Client side programming
+#Server Side Programming
+
+4-Query Languages:- Mysql,Sql Server, Mongo DB
+
+Library:-Jquerry,Animate.css,fontawesome.
+Library provides one functionality.
+Framework:-Bootstrap
+Framework provides us multiple functionalitlies from different libraries.
+
+
+
+
+API(Application Programming Interface):-JavascriptObjectNotation,eXtensibleMarkupLanguage
+eg:tawk.to
+
+
+HTML:-Hypertext Markup Language
+1993 Tim Berner Lee
+current version HTML5
+Editors for HTML:notepad,nodepad++,sublime,visual studio code
+emmet Abbrivation
+comments in HTML:-
+<!-- -->
+
+
+<html><html/>  => root element
+lang="en" =>attribute
+<head> => Meta Information, CDN,External Library
+<meta>=> For SEO Purpose
+<body>=>
+Non Sensitive
+
+Headings:- h1 to h6
+self closing tags:- <br>(line break), <hr>(section break)
+
+<font color="red"></font>=>color attribute
+<font size="40pt"></font>=>size attribute
+<b></b> =>bold
+<i></i>=>italic
+<u></u>=>underline
+
+
+Listing:-
+<li></li>=>List items
+<ul></ul>=>unorderd list
+<ol></ol>=>orderd list
+
+<ul type="A"></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

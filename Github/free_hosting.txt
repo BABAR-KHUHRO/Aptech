@@ -1,0 +1,40 @@
+Q#1 What is Domain?
+Q#2 What is host?
+Q#3 How to secure a website?
+
+------------------
+Hosting:-
+godaddy,hostinger,
+000webhostapp free hosting
+
+---------https://navttctestingweb.000webhostapp.com/
+
+-----------------
+Secure
+http                
+        	SSL Certificates
+https
+
+---------------------
+Themewagon For Template
+tawk to chat Api
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

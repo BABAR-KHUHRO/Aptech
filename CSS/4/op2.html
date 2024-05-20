@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, 
+                   initial-scale=1.0">
+    <title>Opacity of Background Image</title>
+    <style>
+        .element {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            color: white;
+            text-align: center;
+            line-height: 200px;
+            z-index: 1; 
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+         
+        .element::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(1.jfif);
+            opacity: 0.3; /* Adjust opacity level */
+            z-index: -1; /* Ensure background image is behind the text */
+        }
+    </style>
+</head>
+<body>
+    <h2 style="color: green;"> GeeksForGeeks</h2>
+    <div class="element">
+        Background Image with Opacity
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+Font-awesome Library
+1-CDN =>Content Delivery Network
+2-Downloadable File 
+
+.min (Minified File)
+
+--------------------
+Position in css style:-
+1-Static
+2-Absolute
+3-Relative
+4-Fixed
+5-Sticky

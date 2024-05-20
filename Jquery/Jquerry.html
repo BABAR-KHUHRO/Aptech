@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Jquery</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+
+    <script>
+        // Unnomious Function
+        $(document).ready(function () {
+            //alert('jquery CDN')
+            //Selector $("h1"),$("#h1"),$(".h1")
+            // $("p").click(function () {
+            //     // alert("Para Click")
+            //     // $("#head2").toggle()
+            //     // $(".head").toggle()
+            //     $(this).hide()
+            // })
+
+            // $("button").click(function () {
+            //     // $("p").toggle();
+            //     // $("p").css("color", "red")
+            //     // $("p").css("border", "1px solid green")
+            //     // $("p").css("padding", "5px")
+
+            //     var mydata = "<h1>My Heading Using Jquery</h1>";
+
+            //     $("#show").html(mydata)
+            //     $("#p1").html("My Inner HTML")
+            // })
+
+            // $("#loginbtn").click(function () {
+            //     $("#loginForm").css("display", "block")
+            // })
+
+            $("#loginbtn").click(function () {
+                var email = $("#email").val()
+                var password = $("#password").val()
+                document.write(`email : ${email}<br> password: ${password}`)
+
+            })
+
+        })
+    </script>
+</head>
+
+<body>
+
+    <!-- 
+    <div class="modal" tabindex="-1" id="loginForm">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <p id="p1">Hello World</p>
+    <p>Hello World1</p>
+    <p>Hello World2</p>
+    <p>Hello World4</p>
+
+
+
+    <h1 class="head">Heading</h1>
+    <h2 id="head2">Heading 2</h2>
+
+
+    <button>Click</button>
+    <button id="loginbtn">Login</button> -->
+
+
+    <div class="container m-5">
+        <div class="row">
+            <div class="col-12">
+                <form action="">
+                    <input class="form-control mb-3" type="email" name="" id="email" placeholder="Email">
+
+                    <input class="form-control mb-3" type="password" name="" id="password" placeholder="Password">
+
+
+                    <button id="loginbtn" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+
+        * {
+            margin: 0px;
+            padding: 0px;   
+        }
+
+
+        /* Listing */
+
+        .container{
+            margin: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .cart{
+            border: 1px solid red;
+            margin: 5px 0px;
+            box-shadow: 5px 5px 5px rgb(13, 12, 12);
+            overflow: hidden;
+        }
+
+        .img img{
+            width: 200px;
+            height: 200px;
+            transition-duration: 2s;
+            
+        }
+
+        .img img:hover{
+            transform: scale(1.1);
+        }
+
+
+        .detail button{
+            background-color: yellow;
+            padding: 5px 15px;
+            border: none;
+            border-radius: 10px;
+            margin-left: 60px;
+        }

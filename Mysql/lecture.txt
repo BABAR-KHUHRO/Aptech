@@ -1,0 +1,231 @@
+	MYSQL	-> php 
+MY 
+SQL Structure Query Language 
+
+server 
+
+
+SQL SERVER
+MANGO DB
+MS SQL
+SQL LITE 
+
+
+Relational Database Managment System
+
+
+
+create database fullstack
+
+PRIMARY KEY (1)
+FOREIGN KEY (multiple)
+UNIQUE 
+
+
+datatypes
+	integer
+	tinyint
+	varchar
+	text
+	date
+	week
+	month
+	timestamp
+
+length()
+
+
+CREATE TABLE users(
+	Rollno int(11) PRIMARY KEY,
+    name varchar(255),
+    email varchar(255),
+    password varchar(255),
+    dob date
+)
+
+CREATE TABLE registers(
+	Rollno int(11) PRIMARY KEY AUTO_INCREMENT,
+    name varchar(255),
+    email varchar(255),
+    password varchar(255),
+    dob date
+)
+
+
+
+ALTER
+	ADD  
+	ALTER TABLE registers ADD UNIQUE(email)
+
+->Add New Column
+-> PRIMARY KEY
+-> FOREIGN KEY
+-> UNIQYE
+
+	MODIFY
+	ALTER TABLE registers MODIFY address int(11)
+	DROP
+	ALTER TABLE registers DROP status
+
+
+
+
+Operation :
+	DDL
+		Data Defination Language 
+	DML
+		Data Manipulation Language
+		CRUD OPERATION
+
+
+
+
+Views Or Virtual Table:-
+
+Create View examSummary --(examSummary is name we gave to virtual table)
+As
+    "
+    Querry that we use multiple time
+    "
+
+
+
+Aggrigate Function :-
+SUM 
+MAX 
+MIN
+AVERAGE 
+COUNT 
+
+
+select count (id) from registers
+select count (id) from registers where city="DHA"
+select MAX(salary) from registers 
+select salary from registers order by  salary desc Limit 3
+select MIN(salary) from registers 
+select salary from registers order by  salary asc Limit 3
+select avg(salary) from register
+select sum(salary) from register
+
+select city,count(city) from registers group by city
+select count(order_id),order_date from orders group by order_date
+------------------------
+
+
+CREATE TABLE exam(
+	exam_id int(11) PRIMARY KEY AUTO_INCREMENT,
+    exam_name varchar(100),
+    exam_date timestamp,
+    exam_status varchar(100) DEFAULT "Pending",
+    student_id int(11),
+    FOREIGN KEY(student_id) REFERENCES admission(admission_id)
+)
+
+
+
+
+JOins 
+
+	INNER JOIN -> Default Join 
+	LEFT JOIN
+	RIGHT JOIN
+	CROSS JOIN 
+
+
+
+
+SELECT admission.std_name,course.course_name,course.course_duration
+FROM admission 
+INNER JOIN course ON course.course_id = admission.course_id
+
+
+
+SELECT admission.*,course.*
+FROM admission 
+INNER JOIN course ON course.course_id = admission.course_id
+
+
+
+SELECT registers.*,orders.*
+FROM registers 
+LEFT JOIN orders ON orders.u_id = registers.id
+
+
+
+SELECT registers.*,orders.*
+FROM registers 
+RIGHT JOIN orders ON orders.u_id = registers.id
+
+
+
+SELECT registers.*,orders.*
+FROM registers 
+CROSS JOIN orders 
+
+
+
+SELECT admission.std_name,course.course_name,exam.exam_name,exam.exam_status
+FROM admission
+INNER JOIN course ON course.course_id = admission.course_id
+INNER JOIN exam ON exam.student_id = admission.admission_id
+
+
+
+
+
+
+SELECT `admission`.`std_name`, `course`.`course_name`, `exam`.*
+FROM `admission` 
+	INNER JOIN `course` ON `admission`.`course_id` = `course`.`course_id` 
+	INNER JOIN `exam` ON `exam`.`student_id` = `admission`.`admission_id`;
+
+ 
+Task :
+
+admission:
+	table already available in your database
+books:
+	book_id,book_name,book_qty
+Issues_Book:
+	id,student_id,book_id,book_issued_date
+
+Make A Query Which Show Data In This Manner
+	student_name,book_name,book_issued_date
+
+
+
+Views
+
+Create view ShowOrders
+	AS
+		QUERY BODY
+
+
+ALTER 
+
+
+
+Aggrigate Function 
+SUM
+MAX
+MIN
+AVERAGE
+COUNT 
+
+
+-- SELECT COUNT(name) from registers WHERE city = "DHA"
+-- select max(salry) from registers
+-- select salry FROM registers ORDER BY salry DESC LIMIT 3
+
+-- select min(salry) from registers
+-- select salry FROM registers ORDER BY salry ASC LIMIT 3
+
+
+-- SELECT AVG(salry) FROM registers
+
+-- select SUM(salry) from registers
+
+-- select city,count(city) FROM registers GROUP BY city
+
+SELECT COUNT(order_id),order_date FROM orders
+GROUP BY order_date

@@ -1,0 +1,48 @@
+The difference between an ID and a class is that an ID can be used to identify one element, whereas a class can be used to identify more than one.
+The asterisk (*) is known as the CSS universal selectors. It can be used to select any and all types of elements in an HTML page.
+The id attribute is written using the # symbol followed by the id. The class attribute is written using the dot(.) symbol followed by the id.
+
+
+
+Now, what is box-sizing? While changing the padding of the container, its width also changes to avoid these issues. We use box-sizing set it to border-box;
+
+Font-family gives stylish font to the text inside the class or the ID. You can find various font families on the website of google font.
+
+Text-align will help you to bring the text to the middle of the container.
+
+Margin-auto brings the content to the center.
+
+Font size will let you alter the size of the font.
+
+The border property is the shorthand property for 
+
+1-Border-width
+2-Border-style(required)
+3-Border-color
+
+Border radius gives a slight curve to the edges of the border.
+
+ 
+Flexbox in CSS
+CSS flexbox layout allows you to format HTML easily. Flexbox makes it simple to align items vertically and horizontally using rows and columns. Items will "flex" to different sizes to fill the space. It makes the responsive design more manageable.
+
+Display:flex initialize container as flexbox.
+
+Flex-direction allows you to control how the items in the container display. Do you want them left to right, right to left, top to bottom, or bottom to top? You can do all of these easily by setting the flex-direction of the container.
+
+Justify-content  This fills any space on rows and defines how we want to ‘justify’ it. This changes depending on how content is displayed.
+
+This was all about flex.
+
+Cursor: pointer CSS can generate a bunch of different mouse cursors .when pointed on the element containing this property, the cursor changes.
+
+Position: absolute This is a powerful type of positioning that allows you to literally place any page element exactly where you want it. 
+
+z-index: For positioning in front of other elements. This works only with the position property. It does not work with the static position.
+
+
+Opacity: For increasing or decreasing the intensity of the element.
+
+Combining all the above properties and adding them to our CSS file, we can generate a good design.
+
+

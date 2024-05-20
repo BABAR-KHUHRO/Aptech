@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div><h1 style="text-align: center;">AllCategories</h1>
+     <div class="container" id="all">
+
+    </div>
+</div>
+    <div><h1 style="text-align: center;">MEN CATEGORIES</h1><div class="container" id="men">
+
+    </div></div>
+    <div><h1 style="text-align: center;">WOMEN CATEGORIES</h1><div class="container" id="women">
+    </div>
+    </div>
+<script>
+    var product = [
+    {
+        id: 1,
+        p_name: "Product1",
+        p_desc: "Best Quality Provider",
+        p_qty: 10,
+        p_price: 2300,
+        p_image: "images/1.jfif",
+        p_category: "Men"
+    },
+
+    {
+        id: 2,
+        p_name: "Product2",
+        p_desc: "Best Quality Provider",
+        p_qty: 10,
+        p_price: 2300,
+        p_image: "images/1.jfif",
+        p_category: "Men"
+    },
+
+
+    {
+        id: 2,
+        p_name: "Product2",
+        p_desc: "Best Quality Provider",
+        p_qty: 10,
+        p_price: 2300,
+        p_image: "images/1.jfif",
+        p_category: "Men"
+    },
+
+
+
+    {
+        id: 2,
+        p_name: "Product2",
+        p_desc: "Best Quality Provider",
+        p_qty: 10,
+        p_price: 2300,
+        p_image: "images/1.jfif",
+        p_category: "Men"
+    },
+
+
+
+
+    {
+        id: 2,
+        p_name: "Product2",
+        p_desc: "Best Quality Provider",
+        p_qty: 10,
+        p_price: 2300,
+        p_image: "images/1.jfif",
+        p_category: "Men"
+    },
+    {
+        id: 1,
+        p_name: "Product1",
+        p_desc: "Best Quality Provider",
+        p_qty: 10,
+        p_price: 2300,
+        p_image: "images/1.jfif",
+        p_category: "Men"
+    },
+
+    {
+        id: 2,
+        p_name: "Product2",
+        p_desc: "Best Quality Provider",
+        p_qty: 10,
+        p_price: 2300,
+        p_image: "images/1.jfif",
+        p_category: "Men"
+    },
+
+
+    {
+        id: 2,
+        p_name: "Product2",
+        p_desc: "Best Quality Provider",
+        p_qty: 10,
+        p_price: 2300,
+        p_image: "images/1.jfif",
+        p_category: "Men"
+    },
+
+
+
+    {
+        id: 2,
+        p_name: "Product2",
+        p_desc: "Best Quality Provider",
+        p_qty: 10,
+        p_price: 2300,
+        p_image: "images/1.jfif",
+        p_category: "Men"
+    },
+
+
+
+
+    {
+        id: 2,
+        p_name: "Product2",
+        p_desc: "Best Quality Provider",
+        p_qty: 10,
+        p_price: 2300,
+        p_image: "images/1.jfif",
+        p_category: "Men"
+    },
+    {
+        id: 1,
+        p_name: "Product1",
+        p_desc: "Best Quality Provider",
+        p_qty: 10,
+        p_price: 2300,
+        p_image: "images/1.jfif",
+        p_category: "Men"
+    },
+
+    {
+        id: 2,
+        p_name: "Product2",
+        p_desc: "Best Quality Provider",
+        p_qty: 10,
+        p_price: 2300,
+        p_image: "images/1.jfif",
+        p_category: "Men"
+    },
+
+
+    {
+        id: 2,
+        p_name: "Product2",
+        p_desc: "Best Quality Provider",
+        p_qty: 10,
+        p_price: 2300,
+        p_image: "images/1.jfif",
+        p_category: "Men"
+    },
+
+
+
+    {
+        id: 2,
+        p_name: "Product2",
+        p_desc: "Best Quality Provider",
+        p_qty: 10,
+        p_price: 2300,
+        p_image: "images/1.jfif",
+        p_category: "Men"
+    },
+
+
+
+
+    {
+        id: 2,
+        p_name: "Product2",
+        p_desc: "Best Quality Provider",
+        p_qty: 10,
+        p_price: 2300,
+        p_image: "images/1.jfif",
+        p_category: "Men"
+    },
+    {
+        id: 1,
+        p_name: "Product1",
+        p_desc: "Best Quality Provider",
+        p_qty: 10,
+        p_price: 2300,
+        p_image: "images/1.jfif",
+        p_category: "Men"
+    },
+
+    {
+        id: 2,
+        p_name: "Product2",
+        p_desc: "Best Quality Provider",
+        p_qty: 10,
+        p_price: 2300,
+        p_image: "images/1.jfif",
+        p_category: "Men"
+    },
+
+
+    {
+        id: 2,
+        p_name: "Product2",
+        p_desc: "Best Quality Provider",
+        p_qty: 10,
+        p_price: 2300,
+        p_image: "images/2.jfif",
+        p_category: "Women"
+    },
+
+
+
+    {
+        id: 2,
+        p_name: "Product2",
+        p_desc: "Best Quality Provider",
+        p_qty: 10,
+        p_price: 2300,
+        p_image: "images/2.jfif",
+        p_category: "Women"
+    },
+
+
+
+
+    {
+        id: 2,
+        p_name: "Product2",
+        p_desc: "Best Quality Provider",
+        p_qty: 10,
+        p_price: 2300,
+        p_image: "images/2.jfif",
+        p_category: "Women"
+    }
+
+
+]
+
+var all_categories=``
+var m_category = ``;
+var w_category=``;
+// for (var i in product) {
+// if (product[i].p_category == "Men")
+// {
+//     m_category += `
+//         <div class="cart">
+//             <div class="img">
+//                 <img src="${product[i].p_image}" alt="">
+//             </div>
+//             <div class="detail">
+//                 <p>Product Name: ${product[i].p_name}</p>
+//                 <p>Price : ${product[i].p_price}</p>
+//                 <p>Category: ${product[i].p_category}</p>
+//                 <button>Detail</button>
+//             </div>
+//         </div>
+//     `
+// }else{
+//     w_category+= `
+//     <div class="cart">
+//     <div class="img">
+//         <img src="${product[i].p_image}" alt="">
+//     </div>
+//     <div class="detail">
+//         <p>Product Name: ${product[i].p_name}</p>
+//         <p>Price : ${product[i].p_price}</p>
+//         <p>Category: ${product[i].p_category}</p>
+//         <button>Detail</button>
+//     </div>
+// </div>
+// `}}
+
+for (var i of product) {
+if (i.p_category == "Men")
+{
+    m_category += `
+        <div class="cart">
+            <div class="img">
+                <img src="${i.p_image}" alt="">
+            </div>
+            <div class="detail">
+                <p>Product Name: ${i.p_name}</p>
+                <p>Price : ${i.p_price}</p>
+                <p>Category: ${i.p_category}</p>
+                <button>Detail</button>
+            </div>
+        </div>
+    `
+}else{
+    w_category+= `
+    <div class="cart">
+            <div class="img">
+                <img src="${i.p_image}" alt="">
+            </div>
+            <div class="detail">
+                <p>Product Name: ${i.p_name}</p>
+                <p>Price : ${i.p_price}</p>
+                <p>Category: ${i.p_category}</p>
+                <button>Detail</button>
+            </div>
+        </div>
+`}}
+
+all_categories += m_category+w_category
+document.getElementById("all").innerHTML = all_categories
+document.getElementById("men").innerHTML = m_category
+document.getElementById("women").innerHTML = w_category
+</script>
+
+
+
+
+</body>
+
+</html>

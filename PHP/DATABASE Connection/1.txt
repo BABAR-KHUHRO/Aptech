@@ -1,0 +1,19 @@
+                      Connection with Database
+
+
+Methods:-
+
+1-mysqli_connect() 
+
+        1-host                      | 
+        2-User                      |
+        3-Password                  |
+        4-Database                  |
+
+
+2-mysqli_query() 
+        1-Connection
+        2-query 
+
+
+3-var_dump()

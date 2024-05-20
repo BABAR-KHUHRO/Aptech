@@ -1,0 +1,17 @@
+*{
+    background-color: black;
+    /* color: white; */
+    text-decoration: none;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 30px;
+}
+.A{
+    color: white;
+    
+}
+a{
+ color: white;}
+a:hover{
+    color: red;
+}
